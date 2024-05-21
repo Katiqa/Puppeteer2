@@ -12,6 +12,7 @@ describe("Tests cinema", () => {
   });
 
   test("The only one place", async () => {
+    await clickElement(page, "body > nav > a:nth-child(7)");
     await clickElement(
       page,
       "body > main > section:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2)"
